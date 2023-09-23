@@ -1,6 +1,11 @@
+* {
+    box-sizing: border-box;
+}
+
 body {
     background-color: #621402;
     font-family: "Roboto", sans-serif;
+    color: white;
 }
 
 .container {
@@ -9,6 +14,10 @@ body {
 }
 
 .header {
+    min-height: 100vh;
+    background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url("../img/bg.jpg") no-repeat center top / cover;
+
+.navbar {
     display: flex;
     align-items: center;
     padding-top: 30px;
@@ -44,4 +53,137 @@ body {
     height: 33px;
     border-radius: 50%;
     margin-left: 11px;
+}
+
+.film {
+    margin-top: 60px;
+    color: white;
+    display: flex;
+    align-items: center;
+}
+
+.film-title-small {
+    opacity: 50%;
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.film-title {
+    font-size: 36px;
+    line-height: 42px;
+    margin-top: 11px;
+    margin-bottom: 23px;
+}
+
+.film-description {
+    font-size: 16px;
+    line-height: 150%;
+    max-width: 560px;
+}
+
+.film-trailer {
+    margin: auto;
+}
+
+.film-details {
+    margin-top: 50px;
+    display: flex;
+    align-items: center;
+}
+
+.time {
+    display: flex;
+    align-items: center;
+}
+
+.time-icon {
+    margin-right: 14px;
+}
+
+.raiting {
+    display: flex;
+    align-items: center;
+    margin-left: 34px;
+}
+
+.raiting-icon {
+    width: 37px;
+    height: auto;
+    margin-right: 14px;
+}
+
+.raiting-current {
+    font-size: 24px;
+    line-height: 150%;
+}
+
+.session {
+    margin-top: 63px;
+    padding-top: 46px;
+    padding-bottom: 63px;
+    border-top: 1px solid rgba(255, 255, 255, 0.5);
+    border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.session-label {
+    display: block;
+    margin-bottom: 20px;
+}
+
+.session-date-block {
+    display: flex;
+}
+
+.session-date-item {
+    cursor: pointer;
+    display: flex;
+    flex-direction: column;
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    text-align: center;
+    width: 90px;
+    height: 90px;
+    align-items: center;
+    justify-content: center;
+    margin-right: 15px;
+    transition: background-color 0.2s ;
+}
+
+.session-month {
+    font-size: 16px;
+    line-height: 19px; 
+}
+
+.session-day {
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 900;
+    line-height: normal;
+}
+
+.session-week {
+    font-size: 19px;
+    line-height: normal;
+}
+
+.session-date-item:hover {
+    background-color: #FE8E05;
+    color: #621402;
+}
+
+.select {
+    border-radius: 5px;
+    border: 1px solid rgba(255, 255, 255, 0.50);
+    background: rgba(255, 255, 255, 0.15);
+    color: white;
+    padding: 18px;
+    cursor: pointer;
+    margin-top: 15px;
+}
+
+.select-cinema {
+    min-width: 470px;
 }

@@ -16,6 +16,7 @@ body {
 .header {
     min-height: 100vh;
     background: linear-gradient(180deg, rgba(98, 20, 2, 0.31) 0%, #621402 85.62%), url("../img/bg.jpg") no-repeat center top / cover;
+}
 
 .navbar {
     display: flex;
@@ -186,4 +187,87 @@ body {
 
 .select-cinema {
     min-width: 470px;
+}
+
+.scheme {
+    margin-bottom: 40px;
+    border-radius: 10px;
+    background: rgba(36, 36, 36, 0.18);
+}
+
+.scheme path:not(.light) {
+    fill: rgba(255, 255, 255, 0.2);
+    cursor: pointer;
+}
+
+.scheme path:not(.light):hover {
+    fill: rgba(255, 255, 255, 0.5);
+}
+
+.scheme path.booked, .scheme path.booked:hover {
+    fill: rgba(255, 255, 255, 0.05);
+    cursor: not-allowed;
+}
+
+.scheme path.active, .scheme path.active:hover {
+    fill: #FE8E05;
+}
+
+.legend {
+    border-top: 1px solid rgba(255, 255, 255, 0.50);
+    display: flex;
+    align-items: center;
+    max-width: 1024px;
+    margin: auto;
+    padding-top: 22px;
+    padding-bottom: 38px;
+}
+
+.legend-label {
+    display: flex;
+    align-items: center;
+    margin-right: 30px;
+    color: rgba(255, 255, 255, 0.5)
+}
+
+.legend svg {
+    margin-right: -55px;
+}
+
+.price {
+    padding-top: 20px;
+    padding-bottom: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.price-label {
+    display: block;
+    font-size: 18px;
+    line-height: 21px;
+}
+
+.price-tag {
+    font-size: 52px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.button {
+    background: #FE8E05;
+    border-radius: 4px;
+    display: inline-flex;
+    padding: 24px 52px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    color: white;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    padding: 24px 52px;
+    text-decoration: none;
 }
